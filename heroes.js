@@ -28,6 +28,7 @@ class Hero {
 		this.energy = this.energy - energy;
 	}
 }
+
 class Orc extends Hero {
 	attack() {
 		return 10;

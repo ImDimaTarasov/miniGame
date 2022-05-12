@@ -33,12 +33,13 @@
 	transition: width 0.5s linear;
 }
 .stamina {
-	background: rgb(143, 143, 4)
+	background: rgb(143, 143, 4);
 }
 img {
-  height: 300px;
-  width: 200px;
+	height: 300px;
+	width: 200px;
 }
+
 .hide {
 	display: none;
 }
