@@ -60,16 +60,16 @@ const app = () => {
 	const checkWinner = () => {
 		if (orc.hp <= 0) {
 			orcStatus.textContent = "Died";
-			orcWolfStatus.textContent = "Winner"
-			actionBtn.classList.toggle('hide')
+			orcWolfStatus.textContent = "Winner";
+			actionBtn.classList.toggle("hide");
 		}
 		if (orcWolf.hp <= 0) {
 			orcWolfStatus.textContent = "Died";
-			orcStatus.textContent = "Winner"
-			actionBtn.classList.toggle('hide')
+			orcStatus.textContent = "Winner";
+			actionBtn.classList.toggle("hide");
 		}
 	};
-	
+
 	const actionForCharacter = (action, char, opponent, opponentAction) => {
 		if (action === "attack") {
 			char.defend();
@@ -87,8 +87,8 @@ const app = () => {
 			char[action]();
 		}
 		if (action === "wait") {
-			if(char.sta >= maxSta || char.sta >= maxWolfSta){
-				return
+			if (char.sta >= maxSta || char.sta >= maxWolfSta) {
+				return;
 			}
 			char[action]();
 		}
