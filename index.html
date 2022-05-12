@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="heroes.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="character">
+            <div class="character__info">
+                <div id="orcStatus"></div>
+                <div id="orcMaxHp" class="point-bar">
+                    <div id="orcHP" class="bar">
+                    </div>
+                </div>
+                <div id="orcMaxSta" class="point-bar">
+                    <div id="orcSta" class="bar stamina">
+                    </div>
+                </div>
+            </div>
+            <img src="./img/orc.png" alt="orc">
+
+            <div class="character__radio">
+                <form id="orcRadio">
+                    <input type="radio" id="attackOrc" name="action" value="attack" class="radio" checked>
+                    <label for="attackOrc">Attack</label>
+
+                    <input type="radio" id="defendOrc" name="action" value="defend" class="radio">
+                    <label for="defendOrc">Defend</label>
+
+                    <input type="radio" id="waitOrc" name="action" value="wait" class="radio">
+                    <label for="waitOrc">Wait</label>
+                </form>
+            </div>
+        </div>
+        <button class="action">Action</button>
+        <div class="character">
+            <div class="character__info">
+                <div id="orcWolfStatus"></div>
+                <div id="orcWolfMaxHp" class="point-bar">
+                    <div id="orcWolfHP" class="bar">
+                    </div>
+                </div>
+                <div id="orcWolfMaxSta" class="point-bar">
+                    <div id="orcWolfSta" class="bar stamina">
+                    </div>
+                </div>
+            </div>
+            <img src="./img/orcWolf.png" alt="orcWolf">
+
+            <div class="character__radio">
+                <form id="orcWolfRadio">
+                    <input type="radio" id="attackWolfOrc" name="action" value="attack" class="radio" checked>
+                    <label for="attackWolfOrc">Attack</label>
+
+                    <input type="radio" id="defendWolfOrc" name="action" value="defend" class="radio">
+                    <label for="defendWolfOrc">Defend</label>
+
+                    <input type="radio" id="waitWolfOrc" name="action" value="wait" class="radio">
+                    <label for="defendWolfOrc">Wait</label>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
